@@ -16,7 +16,7 @@
             <div class="col-md-12 bg-dark py-2">
                 <div class="dropdown float-right">
                     <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="bi bi-person-circle"></i>
+                        <i class="bi bi-person-circle"></i> USER
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item" href="#">
@@ -40,15 +40,13 @@
         <div class="row vh-100">
             <div class="col-md-2 border">
                 <!-- NAVIGASI -->
-                @include('layouts.navigasi');
+                @include('layouts.navigasi')
             </div>
             <div class="col-md-10">
-                <div class="card text-left mt-2">
-                    <div class="card-body vh-100">
+                
                         <!-- KONTEN DINAMIS-->
-                        @yield('content');
-                    </div>  
-                  </div>
+                        @yield('content')
+
             </div>
         </div>
 

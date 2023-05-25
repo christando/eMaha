@@ -10,8 +10,8 @@ class Mahasiswa extends Model
     protected $table = 'mahasiswa';
 
     //manipulasi data
-    protected $filllable = [
-        'nim', 
+    protected $fillable = [
+        'nim',
         'nama',
         'gender',
         'prodi',

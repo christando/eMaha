@@ -30,7 +30,7 @@ class PageController extends Controller
         $mhs = Mahasiswa::where('nama', 'like', '%'.$cari.'%')->paginate(5);
         $mhs->appends($request->all());
         return view('student', ['key' => 'student', 'mhs'=> $mhs]);
-        
+
     }
 
     public function formadd()
@@ -84,5 +84,5 @@ class PageController extends Controller
         return view('contact', ['key' => 'contact']);
     }
 
-    
+
 }

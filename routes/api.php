@@ -1,5 +1,6 @@
 <?php
 
+use App\Mahasiswa;
 use Illuminate\Http\Request;
 
 /*
@@ -16,3 +17,12 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//API Tampil Data
+Route::get('/mahasiswa/read','MhsAPIController@read');
+//API Create Data
+Route::POST('/mahasiswa/create','MhsAPIController@create');
+//API delete Data
+Route::delete('/mahasiswa/delete/{id}','MhsAPIController@delete');
+//API Update Data
+Route::POST('/mahasiswa/update/{id}','MhsAPIController@update');
